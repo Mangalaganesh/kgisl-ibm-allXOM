@@ -14,7 +14,7 @@ public class TariffCalculationInputVariables {
 
 	private MakeModel makeModel;
 
-    private double noOfClaims;
+	private double claim;
 
 	private ChannelEnum channel;
 
@@ -82,7 +82,13 @@ public class TariffCalculationInputVariables {
 		this.makeModel = makeModel;
 	}
 
+	public double getClaim() {
+		return claim;
+	}
 
+	public void setClaim(double claim) {
+		this.claim = claim;
+	}
 
 	public ChannelEnum getChannel() {
 		return channel;
@@ -163,14 +169,5 @@ public class TariffCalculationInputVariables {
 	public void setDiscount(Discount discount) {
 		this.discount = discount;
 	}
-
-	public double getNoOfClaims() {
-		return noOfClaims;
-	}
-
-	public void setNoOfClaims(double noOfClaims) {
-		this.noOfClaims = noOfClaims;
-	}
-	
 
 }
